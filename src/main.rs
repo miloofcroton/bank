@@ -23,25 +23,27 @@ impl Bank {
   }
 }
 
-fn print_account(account: &Account) {
+fn printAccount(account: &Account) {
   println!("{:#?}", account);
 }
 
-fn change_account(account: &mut Account) {
+fn changeAccount(account: &mut Account) {
   account.balance = 10;
 }
 
-fn add_account(bank: &mut Bank, account: Account) {
+fn addAccount(bank: &mut Bank, account: Account) {
   bank.accounts.push(account);
 }
+
+// fn make_and_print
 
 fn main() {
   let mut bank = Bank::new();
   let mut account = Account::new(1, String::from("Jack"));
 
-  print_account(&account);
-  change_account(&mut account);
-  add_account(&mut bank, account);
+  printAccount(&account);
+  changeAccount(&mut account);
+  addAccount(&mut bank, account);
 
   println!("{:#?}", bank);
 }
