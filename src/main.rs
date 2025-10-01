@@ -4,8 +4,8 @@ mod finance;
 
 // use bank::Bank;
 // use account::Account;
-use finance::bank::Bank;
 use finance::account::Account;
+use finance::bank::Bank;
 
 // fn printBank(bank: Bank) {
 //   println!("{:#?}", bank);
