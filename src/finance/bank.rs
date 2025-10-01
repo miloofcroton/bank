@@ -1,4 +1,4 @@
-use crate::account::Account;
+use crate::finance::account::Account;
 
 #[derive(Debug)]
 pub struct Bank {
